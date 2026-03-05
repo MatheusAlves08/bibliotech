@@ -164,7 +164,6 @@
 .card_info img{
     width: 140px;
     border-radius: 15px;
-    margin-right: 170px;
     margin-bottom: 15px;
 }
 
@@ -300,10 +299,6 @@ body{
     display:flex;
     justify-content:center;
     gap:120px;
-}
-
-.card{
-    width:250px;
 }
 
 .icon{
