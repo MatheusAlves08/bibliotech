@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.itens {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+}
+
+.link:hover {
+    color: #B35518;
+}
+
+.logo {
+    width: 180px;
+}
+
+.botao {
+    background-color: #B35518;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #8a4112;
+}
+
+.hero {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero_conteudo span{
+    color: rgb(255, 167, 4);
+}
+
+.input_container {
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 700px;
+    margin-left: 240px;
+}
+
+.pesquisa {
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 380px;
+    margin-right: 10px;
+}
+
+.livros {
+    padding: 60px 10%;
+    background-color: #f8f8f8;
+}
+
+.livros_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.livros_header h2 {
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.botao_view {
+    background: transparent;
+    border: 1px solid #B35518;
+    color: #B35518;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao_view:hover {
+    background-color: #B35518;
+    color: white;
+}
+
+.cards_container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    width: 170px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.capa_placeholder {
+    background-color: #ccc;
+    height: 220px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.card_info .titulo_livro {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.card_info .autor {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.card_info img{
+    width: 140px;
+    border-radius: 15px;
+    margin-right: 170px;
+    margin-bottom: 15px;
+}
+
+.card_info input{
+    border: none;
+    margin-top: 25px;
+    padding: 4px 30px;
+    background-color: rgba(255, 166, 0, 0.5);
+    font-weight: bold;
+    color: rgb(161, 108, 9);
+    border-radius: 9px;
+    margin-left: 10px;
+}
+
+.eventos {
+    min-height: 450px; 
+    background-color: #F7EDEB;
+    padding: 60px 10% 100px 10%;
+}
+
+
+.eventossub{
+    color: rgb(220, 144, 2);
+    font-weight: bold;
+}
+
+.eventos_header {
+    display: flex;
+    justify-content: space-between; /* Um para cada lado */
+    align-items: center; /* Alinha os centros verticalmente */
+    margin-top: 15px;
+}
+
+.headline {
+    margin-top: 0;
+    margin-left: 0; 
+}
+
+.calendar{
+    color: black;
+    border: 1px solid white; 
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eventoscard {
+    min-height: 250px; 
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;          
+    flex-wrap: wrap;   
+}
+
+.evcard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;        
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.content-title{
+    margin-bottom: 15px;
+}
+
+.reg-button{
+    margin-top: 40px;
+    border: none;
+    color: rgb(242, 161, 10);
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.date{
+    background-color: rgba(255, 166, 0, 0.32);
+    max-width: 40px;
+    color: rgb(222, 145, 2);
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.date h4{
+    margin-left: 10px;
+}
+
+.date h5{
+    margin-left: 5px;
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.help-container{
+    width:100%;
+    padding:80px 0;
+    background:#f7f7f7;
+    text-align:center;
+}
+
+.help-header{
+    margin-bottom:60px;
+}
+
+.help-title{
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.help-subtitle{
+    font-size:16px;
+    color:#777;
+    width:600px;
+    margin:0 auto;
+}
+
+.help-cards{
+    display:flex;
+    justify-content:center;
+    gap:120px;
+}
+
+.card{
+    width:250px;
+}
+
+.icon{
+    width:70px;
+    height:70px;
+    background:#c86a1b;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    color:white;
+    margin:0 auto 20px auto;
+}
+
+.card-title{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.card-text{
+    font-size:14px;
+    color:#777;
+    line-height:1.5;
+}
+
+.rodape {
+    padding: 30px;
+    background-color: #1a1a1a;
+    color: #aaa;
+    text-align: center;
+}
+
+.rodape_texto p {
+    font-size: 0.9rem;
+}
